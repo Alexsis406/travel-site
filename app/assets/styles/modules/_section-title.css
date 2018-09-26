@@ -1,0 +1,42 @@
+
+.section-title {
+
+  font-size: 2.55rem;
+  font-weight: 300;
+  text-align: center;
+
+  @mixin atSmall {
+
+  font-size: 3.75rem;
+
+  }
+
+  strong {
+
+  font-weight: 500;
+
+  }
+
+  &__icon {
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: .6rem;
+
+    @mixin atSmall {
+
+      display: inline-block;
+      margin-right: .5rem;
+      margin-left: 0;
+      margin-bottom: 0;
+
+    }
+
+  }
+
+}
+
+/* the __ indicates the element is part of a block
+which supports the EBM* on the css side the '&'
+would help us join the code to the relevant css block */
