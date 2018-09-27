@@ -17,3 +17,4 @@ vars inside _variables which has to be imported first. */
 @import "modules/_generic-content-container";
 @import "modules/_section-title";
 @import "modules/_feature-item";
+@import "modules/_testimonials";

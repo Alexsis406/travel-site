@@ -6,6 +6,12 @@ for different grid sections and apply relevant classes to the HTML. */
 
   @mixin clearfix;
 
+  &--top-padding {
+
+    padding-top: 80px;
+
+  }
+
   &--gutters {
 
     margin-right: -65px;
@@ -18,6 +24,12 @@ for different grid sections and apply relevant classes to the HTML. */
 
   }
 
+  &--gutters-small {
+
+    margin-right: -45px;
+
+  }
+
   &--gutters > div {
 
     padding-right: 65px;
@@ -27,6 +39,12 @@ for different grid sections and apply relevant classes to the HTML. */
   &--gutters-large > div {
 
     padding-right: 100px;
+
+  }
+
+  &--gutters-small > div {
+
+    padding-right: 45px;
 
   }
 
@@ -75,6 +93,86 @@ for different grid sections and apply relevant classes to the HTML. */
     &__medium-8--smaller {
 
     width: 63%;
+
+    }
+
+  }
+
+  @mixin atLarge {
+
+    &__large-4 {
+
+    float: left;
+    width: 33.33%
+
+    }
+
+    &__b-margin-until-large {
+
+    margin-bottom: 0;
+
+    }
+
+    &__large-4--larger {
+
+      width: 37%;
+
+    }
+
+    &__large-6 {
+
+      float: left;
+      width: 50%;
+
+    }
+
+
+    &__large-8 {
+
+    float: left;
+    width: 66.66%
+
+    }
+
+    &__large-8--smaller {
+
+    width: 63%;
+
+    }
+
+  }
+
+  /* Begin Equal Height Rules */
+
+  &--equal-height-at-medium {
+
+    @mixin atMedium {
+
+    display: flex;
+
+    }
+
+    & > div {
+
+    float: none;
+    display: flex;
+
+    }
+
+  }
+
+  &--equal-height-at-large {
+
+    @mixin atLarge {
+
+    display: flex;
+
+    }
+
+    & > div {
+
+    float: none;
+    display: flex;
 
     }
 
