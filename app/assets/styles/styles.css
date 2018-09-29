@@ -20,3 +20,5 @@ vars inside _variables which has to be imported first. */
 @import "modules/_testimonials";
 @import "modules/_sprite";
 @import "modules/_site-footer";
+@import "modules/_site-header";
+@import "modules/_primary_nav";
