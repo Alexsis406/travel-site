@@ -15,10 +15,17 @@
 
   @mixin atMedium {
 
+    position: fixed;
     background-color: rgba(47, 85, 114, .3);
     /* or use hexrgba package with Gulp to insert vars instead
     of rgb values */
     /* background-color: rgba($mainBlue, .3) //error */
+
+    &--dark {
+
+    background-color: rgba(23, 51, 72, .85);
+
+    }
 
   }
 
@@ -38,6 +45,7 @@
   left: 50%;
   transform: translateX(-50%) scale(.8);
   transform-origin: 50% 0%;
+  transition: transform .3s ease-out;
   background-color: $mainBlue;
   padding: 25px 36px;
 
@@ -45,6 +53,12 @@
 
       left: auto;
       transform: translateX(0);
+
+      .site-header--dark & {
+
+        transform: scale(.56);
+
+      }
 
     }
 

@@ -1193,11 +1193,18 @@ Instead edit gulp/templates/sprite */
 
 .site-header {
 
+    position: fixed;
     background-color: rgba(47, 85, 114, .3)
     /* or use hexrgba package with Gulp to insert vars instead
     of rgb values */
     /* background-color: rgba($mainBlue, .3) //error */
 }
+
+    .site-header--dark {
+
+    background-color: rgba(23, 51, 72, .85);
+
+    }
   }
 
 @media (min-width: 800px) {
@@ -1217,6 +1224,9 @@ Instead edit gulp/templates/sprite */
           transform: translateX(-50%) scale(.8);
   -webkit-transform-origin: 50% 0%;
           transform-origin: 50% 0%;
+  transition: -webkit-transform .3s ease-out;
+  transition: transform .3s ease-out;
+  transition: transform .3s ease-out, -webkit-transform .3s ease-out;
   background-color: #2f5572;
   padding: 25px 36px;
 
@@ -1231,6 +1241,14 @@ Instead edit gulp/templates/sprite */
               transform: translateX(0)
 
   }
+
+      .site-header--dark .site-header__logo {
+
+        -webkit-transform: scale(.56);
+
+                transform: scale(.56);
+
+      }
   }
 
 .site-header__logo__graphic {
@@ -1455,6 +1473,8 @@ Instead edit gulp/templates/sprite */
     padding: 8px 8px;
     font-size: .8rem;
     background-color: rgba(47, 85, 114, .5);
+
+
   }
 
 @media (min-width: 800px) {
@@ -1464,7 +1484,15 @@ Instead edit gulp/templates/sprite */
     font-size: 1rem;
     padding: 12px 0;
     background-color: transparent
+
+
   }
+
+    .primary-nav a.is-current-link {
+
+    color: #fabb69;
+
+    }
   }
 
 .reveal-item {
