@@ -23,3 +23,5 @@ vars inside _variables which has to be imported first. */
 @import "modules/_site-header";
 @import "modules/_primary_nav";
 @import "modules/_reveal-item";
+@import "modules/_modal";
+@import "modules/_social-icons";
